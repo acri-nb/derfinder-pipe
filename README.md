@@ -8,6 +8,7 @@ Only expressed Regions from the input .bam files. This function simply takes bam
 following format. 
 
 | Contig | Start | End | Sample1 | Sample2 | Sample3 | Sample4 |
+| ------ | ----- | --- | ------- | ------- | ------- | ------- |
 | chr1 | 10 | 20 | 5 | 6 | 2 | 3 |
 | chr3 | 50 | 75 | 3 | 3 | 9 | 8 |
 
@@ -17,6 +18,7 @@ regions outside known annotations are discarded, which returns a count matrix wh
 tools such as featureCounts. The output is in the following format. 
 
 | Contig | Start | End | Sample1 | Sample2 | Sample3 | Sample4 | ID | Type |
+| ------ | ----- | --- | ------- | ------- | ------- | ------- | -- | ---- |
 | chr1 | 10 | 20 | 5 | 6 | 2 | 3 | ENSG1 | lncRNA |
 | chr2 | 50 | 75 | 3 | 3 | 9 | 8 | ENSG2 | protein_coding |
 
@@ -26,6 +28,7 @@ This allows the user to see all annotations in a region of interest, while keepi
 The format is as follows. 
 
 | Contig | Start | End | Sample1 | Sample2 | Sample3 | Sample4 | ID | Type |
+| ------ | ----- | --- | ------- | ------- | ------- | ------- | -- | ---- |
 | chr9 | 11 | 20 | 5 | 6 | 2 | 3 | ENSG1;ENSG10 | lncRNA,protein_coding |
 | chr4 | 12 | 79 | 1 | 1 | 9 | 9 | NA | Unknown |
 
